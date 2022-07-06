@@ -29,7 +29,7 @@
       // Author information
       presenters: [
             {
-        name:  'R Users Group Philippines' ,
+        name:  'Rodrigo Basa [R Users Group Philippines]' ,
         company: '',
         gplus: '',
         twitter: '',
@@ -3194,6 +3194,12 @@ slide:not(.current) .plotly.html-widget{
         
   </style>
 
+  <style type="text/css">blockquote {
+background: #f9f9f9;
+border-left: 5px solid #ccc;
+margin: 1.5em 10px;
+padding: 0.5em 1.5em;
+}</style>
 
 </head>
 
@@ -3213,6 +3219,14 @@ slide:not(.current) .plotly.html-widget{
 
 <slide class=""><hgroup><h2>Intro</h2></hgroup><article  id="intro">
 
+<h3>Demystify &ldquo;Software Engineering&rdquo;</h3>
+
+<blockquote>
+<p>Systematic approach to writing good code</p>
+</blockquote>
+
+</article></slide><slide class=""><hgroup><h2>Links</h2></hgroup><article  id="links">
+
 <p>Slides:</p>
 
 <p><a href='https://rug-ph.github.io/code_production_slides' title=''>https://rug-ph.github.io/code_production_slides</a></p>
@@ -3228,13 +3242,14 @@ slide:not(.current) .plotly.html-widget{
 <li>I work in a team of R developers</li>
 <li>I want to share my code with others</li>
 <li>I want to write and publish a package to CRAN</li>
+<li>I need to make my code ready for <em>production</em></li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>What are we discussing today?</h2></hgroup><article  id="what-are-we-discussing-today">
 
 <ul>
 <li>What? and Why?</li>
-<li>How about the How?</li>
+<li>&ldquo;How about the How?&rdquo;</li>
 <li>Not arranged in any particular order</li>
 <li>Not an all-encompassing list</li>
 </ul>
@@ -3243,7 +3258,7 @@ slide:not(.current) .plotly.html-widget{
 
 <ul>
 <li>Implement what you don’t need</li>
-<li>Tackle many topics all at once</li>
+<li>Try to learn many topics all at once</li>
 <li>Strictly apply everything everywhere</li>
 </ul>
 
@@ -3310,6 +3325,8 @@ styler::style_file(&quot;R/01-01_lint_this.R&quot;)</pre>
 <li>meaningful code</li>
 <li>namespacing → re-use of object names</li>
 </ul>
+
+<p>Source code <code>R/02-01_long_code.R</code></p>
 
 </article></slide><slide class=""><hgroup><h2>Modularize Your Code</h2></hgroup><article  id="modularize-your-code-1">
 
@@ -3410,13 +3427,15 @@ styler::style_file(&quot;R/01-01_lint_this.R&quot;)</pre>
 <li><a href='https://bitbucket.org' title=''>Bitbucket</a></li>
 </ul>
 
+<p><a href='https://github.com/RUG-Ph/code_production/commits/main' title=''>Example commit history</a></p>
+
 </article></slide><slide class=""><hgroup><h2>Manage Your Code</h2></hgroup><article  id="manage-your-code-3">
 
 <h3><strong>L2</strong> Advanced VCS</h3>
 
 <ul>
-<li>Branches</li>
-<li>Pull requests</li>
+<li>Branches (<a href='https://github.com/RUG-Ph/code_production/branches' title=''>Example</a>)</li>
+<li>Pull requests (<a href='https://github.com/RUG-Ph/code_production/pulls?q=is%3Apr' title=''>Example</a>)</li>
 <li><a href='https://www.gitkraken.com/learn/git/git-flow' title=''>Git Workflow</a>
 
 <ul>
@@ -3442,6 +3461,8 @@ styler::style_file(&quot;R/01-01_lint_this.R&quot;)</pre>
 <li><a href='https://rstudio.github.io/renv/' title=''>library(renv)</a></li>
 </ul>
 
+<p>Source code <code>renv.lock</code></p>
+
 </article></slide><slide class=""><hgroup><h2>Run Your Code</h2></hgroup><article  id="run-your-code-2">
 
 <h3><strong>L2</strong> Containers</h3>
@@ -3454,12 +3475,14 @@ styler::style_file(&quot;R/01-01_lint_this.R&quot;)</pre>
 
 <h3><strong>L2</strong> Automate<sup>2</sup></h3>
 
-<p>CICD - <a href='https://docs.github.com/en/actions' title=''>Github Actions</a></p>
+<p>CICD - <a href='https://docs.github.com/en/actions' title=''>Github Actions</a> (<a href='https://github.com/RUG-Ph/code_production/actions' title=''>Example</a>)</p>
 
 <ul>
 <li><a href='https://github.com/r-lib/actions' title=''>r-lib/actions</a></li>
 <li><a href='https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/' title=''>Bitbucket Pipelines</a></li>
-</ul></article></slide>
+</ul>
+
+<p>Source code <code>.github/workflows/lint-project.yaml</code></p></article></slide>
 
 
   <slide class="backdrop"></slide>
